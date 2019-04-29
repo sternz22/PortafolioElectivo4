@@ -2,11 +2,11 @@
 
 {% load static %}
 
-{% block title %}Portada{% endblock %}
 
 {% block background %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+{% block title %}{{home.title}}{% endblock %}
 
 {% block headers %}
-    <h1>Portafolio de Proyectos</h1>
-    <span class="subheading">Por Ignacio Guzmán Hormazábal</span>
+    <h1>{{home.name}}</h1>
+    <span class="subheading">{{home.under_title}}</span>
 {% endblock %}
